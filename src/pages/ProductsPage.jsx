@@ -1,6 +1,6 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Filter, Search } from 'lucide-react';
+import { Filter, Search, ChevronDown, ChevronUp } from 'lucide-react';
 import ProductCard from '../components/common/ProductCard';
 import { products, categories } from '../data/mockData';
 import './ProductsPage.css';
@@ -9,6 +9,7 @@ const ProductsPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
+  const [filtersOpen, setFiltersOpen] = useState(false);
 
   const queryParams = useMemo(() => new URLSearchParams(location.search), [location.search]);
   const activeCategory = queryParams.get('category') || 'all';
@@ -71,8 +72,20 @@ const ProductsPage = () => {
 
       <div className="container py-8 flex flex-col md:flex-row gap-8">
         
-        {/* Sidebar Fillters */}
-        <aside className="filters-sidebar w-full md:w-1/4 shrink-0">
+        {/* Sidebar Filters */}
+        <aside className="filters-sidebar">
+          {/* Mobile toggle button */}
+          <button
+            className="filter-toggle-btn"
+            onClick={() => setFiltersOpen(!filtersOpen)}
+            aria-expanded={filtersOpen}
+          >
+            <Filter size={18} />
+            Filters & Search
+            {filtersOpen ? <ChevronUp size={18} style={{ marginLeft: 'auto' }} /> : <ChevronDown size={18} style={{ marginLeft: 'auto' }} />}
+          </button>
+
+          <div className={`filters-sidebar-inner ${filtersOpen ? 'open' : ''}`}>
           <div className="glass-card mb-6 p-6 filters-card">
             <div className="flex items-center gap-2 mb-6 text-primary">
               <Filter size={20} />
@@ -157,7 +170,8 @@ const ProductsPage = () => {
                 })}
               </div>
             </div>
-          </div>
+          </div>{/* end glass-card */}
+          </div>{/* end filters-sidebar-inner */}
         </aside>
 
         {/* Main Content Grid */}

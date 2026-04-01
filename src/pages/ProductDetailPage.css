@@ -1,13 +1,25 @@
-/* Product Detail Page Styles - Text Focused */
-
 .detail-hero-banner {
   background: linear-gradient(135deg, var(--primary), var(--primary-light));
   border-radius: 20px;
-  padding: 3rem;
+  padding: 2.5rem 3rem;
   color: white;
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+  .detail-hero-banner {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .detail-hero-banner {
+    padding: 1.5rem 1.25rem;
+    border-radius: 12px;
+  }
 }
 
 .banner-icon-bg {
@@ -15,7 +27,7 @@
   top: -20px;
   right: -20px;
   opacity: 0.1;
-  transform: scale(4);
+  transform: scale(3.5);
   color: white;
   pointer-events: none;
 }
@@ -26,7 +38,7 @@
 }
 
 .detail-category {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: rgba(255,255,255,0.7);
@@ -37,16 +49,29 @@
 
 .detail-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.1;
   color: white;
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .detail-title { font-size: 1.75rem; }
+}
+
+@media (max-width: 480px) {
+  .detail-title { font-size: 1.4rem; }
 }
 
 .detail-description {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   color: rgba(255,255,255,0.9);
   line-height: 1.6;
   max-width: 800px;
+}
+
+@media (max-width: 480px) {
+  .detail-description { font-size: 0.9rem; }
 }
 
 .badge-container-relative {
@@ -138,6 +163,12 @@
   position: sticky;
   top: 100px;
   border: 2px solid rgba(10,54,157,0.1);
+}
+
+@media (max-width: 1024px) {
+  .sticky-action {
+    position: static;
+  }
 }
 
 .action-divider {
