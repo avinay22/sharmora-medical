@@ -109,17 +109,10 @@ export const products = [
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '') + '.jpg';
 
-  // Determine condition based on category and product name
-  const nameHasRefurbished = p.name.toLowerCase().includes('refurbished');
-  const isNewCategory = ['new-items', 'aeonmed-ventilator', 'spo2-sensors'].includes(p.category);
-  const isRefurbishedCategory = p.category === 'refurbished-defibrillator';
-
-  const condition = (isNewCategory && !nameHasRefurbished) ? 'New' : 'Refurbished';
-
   return {
     ...p,
     description: `High-quality ${p.name} for professional medical use.`,
-    condition,
+    condition: 'New',
     image: `/products/${imageFileName}` 
   };
 });
