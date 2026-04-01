@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHARMORA MEDICAL | Clinical Precision. Engineered Trust.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface": "#d6e3ff",
+              "outline": "#8f9097",
+              "error-container": "#93000a",
+              "inverse-surface": "#d6e3ff",
+              "on-tertiary-container": "#259090",
+              "surface": "#041329",
+              "on-primary-container": "#74829d",
+              "tertiary-container": "#001d1d",
+              "primary-fixed-dim": "#b9c7e4",
+              "secondary": "#b8c8da",
+              "surface-bright": "#2c3951",
+              "on-secondary-fixed-variant": "#394857",
+              "tertiary-fixed-dim": "#76d6d5",
+              "primary-fixed": "#d6e3ff",
+              "on-error": "#690005",
+              "surface-container-lowest": "#010e24",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "surface-container-low": "#0d1c32",
+              "secondary-fixed-dim": "#b8c8da",
+              "secondary-fixed": "#d4e4f6",
+              "surface-container-highest": "#27354c",
+              "on-background": "#d6e3ff",
+              "on-tertiary-fixed": "#002020",
+              "on-secondary-fixed": "#0d1d2a",
+              "secondary-container": "#394857",
+              "on-error-container": "#ffdad6",
+              "on-tertiary": "#003737",
+              "error": "#ffb4ab",
+              "surface-variant": "#27354c",
+              "tertiary": "#76d6d5",
+              "on-primary-fixed": "#0d1c32",
+              "on-surface-variant": "#c5c6cd",
+              "inverse-primary": "#515f78",
+              "on-secondary-container": "#a7b7c8",
+              "surface-dim": "#041329",
+              "primary": "#b9c7e4",
+              "outline-variant": "#44474d",
+              "background": "#041329",
+              "primary-container": "#0a192f",
+              "tertiary-fixed": "#93f2f2",
+              "surface-container-high": "#1c2a41",
+              "inverse-on-surface": "#233148",
+              "on-primary-fixed-variant": "#39475f",
+              "on-secondary": "#223240",
+              "on-primary": "#233148",
+              "surface-tint": "#b9c7e4",
+              "surface-container": "#112036"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(39, 53, 76, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient-overlay {
+            background: linear-gradient(to right, rgba(4, 19, 41, 0.95) 0%, rgba(4, 19, 41, 0.7) 50%, rgba(4, 19, 41, 0.2) 100%);
+        }
+        .btn-machined {
+            background: linear-gradient(135deg, #b9c7e4 0%, #0a192f 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary selection:text-on-tertiary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full flex justify-between items-center px-8 py-4 max-w-none bg-[#041329]/60 backdrop-blur-xl z-50">
+<div class="flex items-center gap-12">
+<span class="text-2xl font-bold tracking-tighter text-[#b9c7e4] font-headline">SHARMORA</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#b9c7e4]/70 hover:text-[#b9c7e4] transition-colors text-sm font-medium" href="#">ICU Ventilators</a>
+<a class="text-[#b9c7e4]/70 hover:text-[#b9c7e4] transition-colors text-sm font-medium" href="#">Defibrillators</a>
+<a class="text-[#b9c7e4]/70 hover:text-[#b9c7e4] transition-colors text-sm font-medium" href="#">Imaging</a>
+<a class="text-[#b9c7e4]/70 hover:text-[#b9c7e4] transition-colors text-sm font-medium" href="#">Surgical</a>
+<a class="text-[#b9c7e4]/70 hover:text-[#b9c7e4] transition-colors text-sm font-medium" href="#">Patient Monitoring</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center bg-surface-container-highest px-4 py-2 rounded-lg group focus-within:ring-1 ring-tertiary/50 transition-all">
+<span class="material-symbols-outlined text-outline text-sm mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 placeholder:text-outline/50" placeholder="Search Inventory..." type="text"/>
+</div>
+<button class="bg-[#1c2a41]/50 hover:bg-[#27354c] text-[#b9c7e4] px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-300 scale-98 active:scale-95">
+                Client Portal
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-[921px] flex items-center overflow-hidden pt-16">
+<div class="absolute inset-0 z-0">
+<img alt="Modern Operating Room" class="w-full h-full object-cover" data-alt="cinematic wide shot of a futuristic dark operating theater with blue ambient lighting and advanced robotic medical systems in soft focus background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARs5_BshPahdvHyceU5gNSv8RhRyoErWRvzp14SXZH5PmYgQaFV2Z4eYFbP4xNGmbOYPcUICIPGuGf1krh1kthtNZHemB3Xhin_4Mle_nCbJfWh3EWtogzTg9n_wXsJ10yEwlzd5E8YSc8QvIuo-2ACv4c98FcAC55n5XTXtAslIZ1ddd1-2C16A0pxsA3Ss_C4uQVwRsgVUsWmd9e3LCefIjo1g6uAu37LLNM5I_LToZu_8T2irvd7uzvuG9fseNPSKJu1vp473s"/>
+<div class="absolute inset-0 hero-gradient-overlay"></div>
+</div>
+<div class="container mx-auto px-8 z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-tertiary-container text-tertiary text-[10px] font-bold tracking-[0.2em] uppercase rounded-full mb-6">Pioneering Clinical Excellence</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold text-on-surface leading-[1.05] tracking-tighter mb-8">
+                    Next-Generation <span class="text-tertiary">Medical</span> Equipment Sourcing
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                    Engineering trust through high-fidelity diagnostic tools and life-critical equipment. Delivering precision-manufactured technology to the world's leading medical institutions.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="btn-machined px-8 py-4 text-on-primary font-bold uppercase tracking-widest text-xs rounded-lg hover:brightness-110 transition-all shadow-xl shadow-primary/5">
+                        Explore Catalog
+                    </button>
+<button class="px-8 py-4 glass-panel border border-outline-variant/15 text-on-surface font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-surface-container-highest transition-all">
+                        Schedule a Consultation
+                    </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Trusted Technology Partners -->
+<section class="bg-surface-container-low py-12 border-y border-outline-variant/5">
+<div class="container mx-auto px-8">
+<div class="flex flex-wrap justify-between items-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
+<span class="font-headline font-black text-xl tracking-tighter text-on-surface/50">M-TECH GENETICS</span>
+<span class="font-headline font-black text-xl tracking-tighter text-on-surface/50">CORE_IMAGING</span>
+<span class="font-headline font-black text-xl tracking-tighter text-on-surface/50">BIO-SYNC</span>
+<span class="font-headline font-black text-xl tracking-tighter text-on-surface/50">LUMINA MEDICAL</span>
+<span class="font-headline font-black text-xl tracking-tighter text-on-surface/50">PRECISION_SURG</span>
+</div>
+</div>
+</section>
+<!-- The Sharmora Advantage -->
+<section class="py-32 container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<div class="space-y-6 group">
+<div class="w-14 h-14 rounded-xl glass-panel flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-all duration-500">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">Strict Medical Certifications</h3>
+<p class="text-on-surface-variant leading-relaxed">Every device in our catalog undergoes a rigorous 50-point clinical validation process, exceeding international FDA and CE standards for critical care.</p>
+</div>
+<div class="space-y-6 group">
+<div class="w-14 h-14 rounded-xl glass-panel flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-all duration-500">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">24/7 Technical Support</h3>
+<p class="text-on-surface-variant leading-relaxed">Our dedicated team of clinical engineers is on standby globally to ensure zero downtime for your critical life-support infrastructure.</p>
+</div>
+<div class="space-y-6 group">
+<div class="w-14 h-14 rounded-xl glass-panel flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-all duration-500">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline text-2xl font-bold">Uncompromising Quality</h3>
+<p class="text-on-surface-variant leading-relaxed">We source exclusively from Tier-1 manufacturers, prioritizing mechanical longevity and diagnostic fidelity over industry-standard margins.</p>
+</div>
+</div>
+</section>
+<!-- Clinical Categories Grid -->
+<section class="bg-surface-container-low py-32">
+<div class="container mx-auto px-8">
+<div class="mb-20">
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">Clinical Specializations</h2>
+<div class="h-1 w-24 bg-tertiary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 h-full">
+<!-- Main Featured Category -->
+<div class="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-xl h-[600px]">
+<img alt="ICU Ventilator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close up of a modern digital medical ventilator display showing respiratory waveforms with soft blue bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnHZe8RHVyJkDMgW5F7Ikm7mzsea2j6KE3GgcnW5ihpXhRML0ssRGWXj7P2Ko7Kqjdv_xXjwT1lNNTXH0RKoV_HcenADItNc5qeeERBycuv47i_-NkPdH8q561_tPnxCDD6n18alMkDFcBE5Foq-NvXGmUmcIeFBB-JgLQgsvuLCXzsOo1_6CdE4Pv81syVjrR9BpWCrJawqF998EErT3QjMlaBSsTOJzCe2xw8Ud3F26u73rdMmQabXFZEoN1KCAemxj75DwzVjM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80"></div>
+<div class="absolute bottom-10 left-10">
+<h3 class="font-headline text-4xl font-extrabold text-on-surface mb-2">ICU Ventilators</h3>
+<p class="text-tertiary font-bold tracking-widest text-xs uppercase">Life Support Systems</p>
+</div>
+</div>
+<!-- Secondary Categories -->
+<div class="relative group overflow-hidden rounded-xl h-[284px]">
+<img alt="Defibrillator" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high contrast studio shot of a professional emergency defibrillator unit with yellow accents against dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_mrdIeKcRtlbGfY_x1F5dyoCYVPR2fUNM4Lm9Lmt_1ihC4Ag7FpgDStnBgnIt4EU9CM4KuDuQV5K1LTCxb_qcmwTJrPjrLEFYq8AbAqIJ4SiaD8gB_SZW6tnYzGvbigEsyzLKibXWHZioJfe9ioE0LpfVgmp_sryRlwd74piD0uSNNQWE1aGm_gU-BDf208r6RH6ezC2qKn_RK9IO6eGNZNy1-vacX9TgK85ZZQ6bE-_dSG4AARdNaTc-8pt2JcUoDg6ZuaEIuUg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Defibrillators</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-[284px]">
+<img alt="Patient Monitor" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="macro photograph of a vital signs monitor showing bright green heart rate lines in a dark clinical setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZVhYYG3jtu7dIKd8p6UzuW-uGv1tgXjLBrgcguc7SRj_k72PWdjVuoNl64udFKCPt8KirabLKpqBJDkzz6e58m-R0d084Q8cKsikptqdGstdlo_ibGbipTl2STFDUhtCDYNnJhk1kzpeWDfQKYbiu4HXwk1HHsXe9RjtumRxC8J8p7z05PH_nRqjuOtsrVbla6NWz_qodA_vIFcJrGhYLIjlTyZoMkBZJp8AJqy53V5FHb0swyVvqa3IFPZYHBts6ucySn2Vz95Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Patient Monitors</h3>
+</div>
+</div>
+<!-- Bottom Row -->
+<div class="relative group overflow-hidden rounded-xl h-[284px]">
+<img alt="Surgical Imaging" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="medical x-ray imaging system arm in a clean white laboratory environment with sharp professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBAsezIDhWu5Vxf4MJdtfQyDLaTTfQbA27GbJMAZONa87I8s8c7gcKq_PrFrVFE1Vz3cCaKXIgE5L3nFtGNqVvtLMlH6mu4Tti0gvRzVvtQ4Apsf9VYdHbljqfniYGfqgyrqiXGojmPwv6ChsDmjEN-SsXuH3NYicqxNMqd_syVCw2BpMhPqR8TdBbRw-xMdpDQbPoaWxwHvXw-H1-9-yv4jR-MoAbCjkQEceb-pck3moVolGRjmNdGWktPtIlXnmZEwExH5zAk2w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Surgical Imaging</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-[284px]">
+<img alt="Endoscopy" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close up of a high-definition endoscopic camera head with stainless steel finish and optical glass" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCy6VOd2oL3MkKtkbzHccdJABRnknlyNuM5kRyFwZt7lLCgZusRqfIWGxvPXzTRuExcl00YM7xSUk20-Zgb_vdlARdL9XKiPSEWk73Tj5mPe9qx-7x6a4gitdzWsQnBcmeYwp4gY4G2C_RBNirLDQQWepRKhvkyiBmV28VLsMeA9EuPBPR7LappGHIrAnAH4CR_t_GaizREOz6_UBWag9jFdF3sFM5rAa8XTsC7Tl8gP0wlIVngq1eENy-M1WMYZeH8bISo_D4ZwV0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Endoscopy</h3>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-xl h-[284px]">
+<img alt="Infusion Pumps" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="bank of modern infusion pumps in a hospital ward with soft blurred focus on the backlit digital interfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnwoa5MRolmZd5P7K8C2vwGN4iqWWZxsKlhkK1XlgpRDR4a0IoLgfQkqYXJwiCNDQ-fUf7n9ZywSIIzX2HlQN3Q2XwGD_7U1L65wnfEuLMCG6FCuVfFujl_ICAuFhB99EssCCPBrUgy7-_56tuuM6Rdpd3jNCJbe13Gz9rONxqaDXkp0tN8ZjrUUDuq6VxWqRTo_LNjotlgm5gO3QtUn6UTR2w49ZXMoRZqCQgHV9nhveaqCqilPqrPEePFokSfiiwjOJA0Tqh5nA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface/80 to-transparent"></div>
+<div class="absolute bottom-6 left-6">
+<h3 class="font-headline text-xl font-bold text-on-surface">Infusion Pumps</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Certified Refurbished -->
+<section class="py-32 container mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline text-4xl font-extrabold mb-4">Certified Refurbished</h2>
+<p class="text-on-surface-variant max-w-lg">Clinically restored to manufacturer specifications by our in-house engineering lab. Uncompromising performance at a sustainable investment level.</p>
+</div>
+<a class="text-tertiary font-bold uppercase tracking-widest text-xs border-b border-tertiary/30 pb-1 hover:border-tertiary transition-all" href="#">View All Inventory</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="glass-panel rounded-xl overflow-hidden group hover:ring-1 ring-tertiary/20 transition-all">
+<div class="h-64 relative bg-surface-container-high flex items-center justify-center p-8">
+<img alt="GE Carescape" class="max-w-full max-h-full object-contain mix-blend-screen group-hover:scale-110 transition-transform duration-500" data-alt="professional medical monitoring device with a large screen and complex sensor arrays on a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfYjixzbQCLF7UqAfzGVQYKlxMB8Svm8qIE-hVWfxp4W2BYIY2U5L40eb-ireMbj9pVULgGHca93F-6LBjpq5D2Ute1hkkMrRm4kfL5OesAEl3VIP3fX1HJXz_zp85t8b3RAbFMXvEm9VtdYqILiYzjqzTEQ16Dc3HQhz1GmZ_OLDvm1rigK4vMnyzMBXSNqVOI386k4_Jhai0uPAAaWZLoTPCE1zTA7OXez25Ra7YOuf7nqfg69A5Zi68P_5qOg2aSrrueOpMAGs"/>
+<span class="absolute top-4 right-4 bg-tertiary-container text-tertiary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter">Refurbished - Certified</span>
+</div>
+<div class="p-6">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-1">GE Healthcare</p>
+<h4 class="font-headline text-lg font-bold mb-4">Carescape B850 Monitor</h4>
+<div class="flex justify-between items-center">
+<span class="text-xl font-black text-on-surface">$12,450</span>
+<button class="material-symbols-outlined text-tertiary hover:scale-125 transition-transform">add_shopping_cart</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="glass-panel rounded-xl overflow-hidden group hover:ring-1 ring-tertiary/20 transition-all">
+<div class="h-64 relative bg-surface-container-high flex items-center justify-center p-8">
+<img alt="Dräger Evita" class="max-w-full max-h-full object-contain mix-blend-screen group-hover:scale-110 transition-transform duration-500" data-alt="industrial medical ventilator unit with high precision metal chassis and advanced digital controls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrpzDXn8oRO02n7VMjhSDVfQsb_kK_YrBYqX0fAgBONAe7xFTeZcU9lV232LLgudq8FOSA_mVW5cemazNY9mb012_fBqUtfXskTyOpbo8YU5TMndB5xnMfkxlLDz_ZG1PzhQwD23WJCNF3aLoZPHg0t_A8nN4JmyO5Vk3p4fnHq-2AJvSdpAYncK8rh3aaovuKsn_R4mGnDy5x7QbMxgNajvBhB0aQYm9j5iTu8z_kVG6p_x-GHDdo4RI4tGc-WRU0_Hl9eoJoOKE"/>
+<span class="absolute top-4 right-4 bg-tertiary-container text-tertiary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter">Refurbished - Certified</span>
+</div>
+<div class="p-6">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-1">Dräger</p>
+<h4 class="font-headline text-lg font-bold mb-4">Evita V500 Ventilator</h4>
+<div class="flex justify-between items-center">
+<span class="text-xl font-black text-on-surface">$28,900</span>
+<button class="material-symbols-outlined text-tertiary hover:scale-125 transition-transform">add_shopping_cart</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="glass-panel rounded-xl overflow-hidden group hover:ring-1 ring-tertiary/20 transition-all">
+<div class="h-64 relative bg-surface-container-high flex items-center justify-center p-8">
+<img alt="Philips Lumify" class="max-w-full max-h-full object-contain mix-blend-screen group-hover:scale-110 transition-transform duration-500" data-alt="sleek handheld ultrasound probe with high polish medical grade finish on a dark reflective surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB-_yX2Yt1-xPhqwuW0pHxgnQpqYPfYvMubvggt0VyaCLyUuycbvDbd6lbForTsfJHBnz3htF8vXpxh2TmzDf11kT7EBH9Q6LbDfzfgFzBa0yNUjtCSan-siYmttD0JtEVt4SggHeITAGt23HH8aKAI6ZoevheEthjXIG361Y4ILNf4k65BfU23pGbVQjRDVM5FUQDHWH42D6wrOQsnul_NI_aqIS06FbcXSbiDTAfgBYFKK8338V6juOT_JG4nlfnhG2E3qmh7IY"/>
+<span class="absolute top-4 right-4 bg-tertiary-container text-tertiary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter">Refurbished - Certified</span>
+</div>
+<div class="p-6">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-1">Philips</p>
+<h4 class="font-headline text-lg font-bold mb-4">Lumify S4-1 Ultrasound</h4>
+<div class="flex justify-between items-center">
+<span class="text-xl font-black text-on-surface">$4,200</span>
+<button class="material-symbols-outlined text-tertiary hover:scale-125 transition-transform">add_shopping_cart</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="glass-panel rounded-xl overflow-hidden group hover:ring-1 ring-tertiary/20 transition-all">
+<div class="h-64 relative bg-surface-container-high flex items-center justify-center p-8">
+<img alt="Stryker 1488" class="max-w-full max-h-full object-contain mix-blend-screen group-hover:scale-110 transition-transform duration-500" data-alt="professional endoscopic camera system control unit with premium machined aluminum dial and interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwKnyK0d0m7q06xZtVBxg1NVhkiEjJDvyyuTj5S8ytAaUvF1p3rTc8Q9bwr5jjVd6ebzYTwYWpAW9gm2OEuY2JjKtC6W0xSq4BFP46wScj4ELbslqARkRuBt138snGUmPtNyZJGoB4yUEJ_NL85H5Je7lxxyzqZrqMpYEBnAowtjhfzXejJt3U13tyDhGeNb4U_7HL35cLFlloMS5BMslOqDcwLSFipHW9O8e7IPqi4INUkDc6UajtGQ0H41KGyntuJKKqJ5oEORI"/>
+<span class="absolute top-4 right-4 bg-tertiary-container text-tertiary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter">Refurbished - Certified</span>
+</div>
+<div class="p-6">
+<p class="text-[10px] text-on-surface-variant font-bold uppercase tracking-widest mb-1">Stryker</p>
+<h4 class="font-headline text-lg font-bold mb-4">1488 HD Camera System</h4>
+<div class="flex justify-between items-center">
+<span class="text-xl font-black text-on-surface">$18,500</span>
+<button class="material-symbols-outlined text-tertiary hover:scale-125 transition-transform">add_shopping_cart</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#041329] w-full px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-[#b9c7e4]/15">
+<div class="space-y-6">
+<span class="text-lg font-bold text-[#76d6d5] font-headline">SHARMORA</span>
+<p class="text-sm text-[#b9c7e4]/60 leading-relaxed">Providing high-performance clinical hardware to healthcare networks globally. Engineered for life, designed for precision.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-[#b9c7e4]">Global Logistics</h5>
+<a class="text-sm text-[#b9c7e4]/60 hover:text-[#76d6d5] transition-colors" href="#">Quality Certifications</a>
+<a class="text-sm text-[#b9c7e4]/60 hover:text-[#76d6d5] transition-colors" href="#">Shipping Policy</a>
+<a class="text-sm text-[#b9c7e4]/60 hover:text-[#76d6d5] transition-colors" href="#">Privacy Registry</a>
+</div>
+<div class="flex flex-col gap-4">
+<h5 class="text-xs font-bold uppercase tracking-widest text-[#b9c7e4]">Support Center</h5>
+<a class="text-sm text-[#b9c7e4]/60 hover:text-[#76d6d5] transition-colors" href="#">24/7 Technical Support</a>
+<a class="text-sm text-[#b9c7e4]/60 hover:text-[#76d6d5] transition-colors" href="#">Replacement Parts</a>
+<a class="text-sm text-[#b9c7e4]/60 hover:text-[#76d6d5] transition-colors" href="#">Warranty Registry</a>
+</div>
+<div class="flex flex-col gap-6">
+<h5 class="text-xs font-bold uppercase tracking-widest text-[#b9c7e4]">Technical Newsletter</h5>
+<div class="flex bg-surface-container-high rounded-lg overflow-hidden p-1">
+<input class="bg-transparent border-none focus:ring-0 text-sm px-3 flex-grow" placeholder="Institutional Email" type="email"/>
+<button class="bg-[#76d6d5] text-[#002020] px-4 py-2 text-xs font-bold uppercase rounded">Join</button>
+</div>
+<p class="text-[10px] text-[#b9c7e4]/40 uppercase tracking-widest">© 2024 Sharmora Medical. Clinical Precision. Engineered Trust.</p>
+</div>
+</footer>
+</body></html>
