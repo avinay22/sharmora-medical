@@ -115,6 +115,6 @@ export const products = [
     ...p,
     description: `High-quality ${p.name} for professional medical use.`,
     condition: p.category === 'new-items' ? 'New' : 'Refurbished',
-    image: `/src/assets/products/${imageFileName}` 
+    image: `/products/${imageFileName}` 
   };
 });
