@@ -23,7 +23,7 @@ const HomePage = () => {
               <span className="text-secondary gradient-text">Equipment Sourcing</span>
             </h1>
             <p className="hero-description max-w-2xl mx-auto">
-              Empower your facility with clinical-grade, certified new and refurbished medical technology. We handle procurement, installation, and zero-downtime support.
+              Empower your facility with clinical-grade, certified medical technology. We handle procurement, installation, and zero-downtime support.
             </p>
             <div className="hero-actions justify-center mt-8">
               <Link to="/products" className="btn btn-primary btn-lg">
@@ -70,7 +70,7 @@ const HomePage = () => {
             <div className="feature-card glass-card hover-glow">
               <div className="feature-icon-wrapper premium-icon"><ShieldCheck size={32} /></div>
               <h3 className="font-outfit text-xl mb-3">50-Point Inspection</h3>
-              <p className="text-muted">Every refurbished unit is scrutinized through rigorous clinical stress tests before receiving our certification.</p>
+              <p className="text-muted">Every unit is scrutinized through rigorous clinical stress tests and quality inspections before receiving our certification.</p>
             </div>
             <div className="feature-card glass-card hover-glow">
               <div className="feature-icon-wrapper premium-icon"><Activity size={32} /></div>
@@ -111,11 +111,11 @@ const HomePage = () => {
       <section className="section bg-slate dark-themed-section pattern-bg">
         <div className="container">
           <div className="section-header flex justify-between items-end mb-12 flex-wrap gap-4">
-            <div className="text-white">
-              <h2 className="text-4xl mb-2 text-white">Certified Refurbished</h2>
-              <p className="text-gray-400 text-lg">Premium equipment restored to factory clinical specifications.</p>
+          <div className="text-white">
+              <h2 className="text-4xl mb-2 text-white">Premium Certified Equipment</h2>
+              <p className="text-gray-400 text-lg">Top-quality medical devices restored to peak clinical performance — tested, certified, and ready for deployment.</p>
             </div>
-            <Link to="/products?condition=Refurbished" className="btn btn-primary">See All Refurbished</Link>
+            <Link to="/products" className="btn btn-primary">View All Equipment</Link>
           </div>
           <div className="products-grid">
             {featuredProducts.map(product => (

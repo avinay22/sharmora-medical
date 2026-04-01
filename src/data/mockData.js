@@ -1,9 +1,9 @@
 export const categories = [
-  { id: 'portable-transport-ventilator', name: 'PORTABLE AND TRANSPORT VENTILATOR', icon: 'wind' },
+  { id: 'portable-transport-ventilator', name: 'PORTABLE & TRANSPORT VENTILATOR', icon: 'wind' },
   { id: 'patient-monitor', name: 'PATIENT MONITOR', icon: 'activity' },
   { id: 'ventilator', name: 'VENTILATOR', icon: 'wind' },
   { id: 'aeonmed-ventilator', name: 'AEONMED VENTILATOR', icon: 'wind' },
-  { id: 'refurbished-defibrillator', name: 'REFURBISHED DEFIBRILLATOR', icon: 'zap' },
+  { id: 'certified-defibrillator', name: 'CERTIFIED DEFIBRILLATOR', icon: 'zap' },
   { id: 'cautery-machine', name: 'CAUTERY MACHINE', icon: 'scissors' },
   { id: 'defibrillator', name: 'DEFIBRILLATOR', icon: 'zap' },
   { id: 'zoll-defibrillators', name: 'ZOLL DEFIBRILLATORS', icon: 'zap' },
@@ -47,7 +47,7 @@ export const products = [
   { id: 'p30', name: 'Philips Heartstart Xl Plus Defibrillator', category: 'other-products' },
   { id: 'p31', name: 'Philips Efficia Dfm100 Defibrillator', category: 'other-products' },
 
-  { id: 'pt1', name: 'Refurbished Ltv 1000 Ventilator', category: 'portable-transport-ventilator' },
+  { id: 'pt1', name: 'LTV 1000 Ventilator', category: 'portable-transport-ventilator' },
   { id: 'pt2', name: 'Aeonmed Shangrila 510 S Transport Ventilator', category: 'portable-transport-ventilator' },
   { id: 'pt3', name: 'Drager Oxylog 2000 Ventilator', category: 'portable-transport-ventilator' },
   { id: 'pt4', name: 'parapac 200d transport ventilator', category: 'portable-transport-ventilator' },
@@ -66,10 +66,10 @@ export const products = [
   { id: 'av2', name: 'Aeonmed Vg70 Ventilator', category: 'aeonmed-ventilator' },
   { id: 'av3', name: 'Aeonmed Respiratory Ventilator VG70', category: 'aeonmed-ventilator' },
 
-  { id: 'rd1', name: 'Philips Heartstart Mrx Defibrillator', category: 'refurbished-defibrillator' },
-  { id: 'rd2', name: 'Philips Heartstart XL Defibrillator monitor ICU Emergency', category: 'refurbished-defibrillator' },
-  { id: 'rd3', name: 'Physio Control Lifepak 20e Defibrillator', category: 'refurbished-defibrillator' },
-  { id: 'rd4', name: 'Cord Master XL', category: 'refurbished-defibrillator' },
+  { id: 'rd1', name: 'Philips Heartstart Mrx Defibrillator', category: 'certified-defibrillator' },
+  { id: 'rd2', name: 'Philips Heartstart XL Defibrillator Monitor ICU Emergency', category: 'certified-defibrillator' },
+  { id: 'rd3', name: 'Physio Control Lifepak 20e Defibrillator', category: 'certified-defibrillator' },
+  { id: 'rd4', name: 'Cord Master XL Defibrillator', category: 'certified-defibrillator' },
 
   { id: 'cm1', name: 'Valleylab Force Triad Cautery Machine', category: 'cautery-machine' },
   { id: 'cm2', name: 'Valleylab Force Fx Cautery Machine', category: 'cautery-machine' },
@@ -93,7 +93,7 @@ export const products = [
 
   { id: 'ni1', name: 'Maquet Datascope Cs300', category: 'new-items' },
   { id: 'ni2', name: 'Medtronic Act Plus Machine', category: 'new-items' },
-  { id: 'ni3', name: 'Drager Evita 4 Ventilator Refurbished', category: 'new-items' },
+  { id: 'ni3', name: 'Drager Evita 4 Ventilator', category: 'new-items' },
   { id: 'ni4', name: 'PARAPAC Emergency And Transport Ventilator', category: 'new-items' },
   { id: 'ni5', name: 'GE GOLDAWY B 40 MONITER', category: 'new-items' },
   { id: 'ni6', name: 'Maquet Datascope Cs100', category: 'new-items' },
