@@ -10,9 +10,7 @@ const getCategoryIconBig = (categoryId) => {
     case 'aeonmed-ventilator': 
     case 'icu-ventilators': return <Wind size={64} />;
     case 'patient-monitoring': return <Activity size={64} />;
-    case 'defibrillators':
-    case 'certified-defibrillator':
-    case 'refurbished-defibrillator': return <Zap size={64} />;
+    case 'defibrillators': return <Zap size={64} />;
     case 'ot-surgical': return <Scissors size={64} />;
     case 'respiratory-sleep': return <HeartPulse size={64} />;
     case 'diagnostic-accessories': return <Stethoscope size={64} />;
@@ -74,7 +72,11 @@ Thank you!`;
                 <h1 className="detail-title">{name}</h1>
               </div>
               <div className="badge-container-relative">
-                <span className="badge badge-new large-badge">✓ Certified Quality</span>
+                {condition === 'New' ? (
+                  <span className="badge badge-new large-badge">Brand New</span>
+                ) : (
+                  <span className="badge badge-refurbished large-badge">Certified Refurbished</span>
+                )}
               </div>
             </div>
             

@@ -16,8 +16,7 @@ const getCategoryIcon = (categoryId) => {
     case 'aeonmed-ventilator': 
     case 'icu-ventilators': return <Wind size={32} />;
     case 'patient-monitor': return <Activity size={32} />;
-    case 'refurbished-defibrillator':
-    case 'certified-defibrillator': 
+    case 'refurbished-defibrillator': 
     case 'defibrillator': 
     case 'zoll-defibrillators': 
     case 'automatic-external-defibrillator': return <Zap size={32} />;
@@ -60,7 +59,11 @@ Could you please share availability, pricing, and delivery details? Thank you!`;
           </div>
         </div>
         <div className="product-badges">
-          <span className="badge badge-new">✓ Certified</span>
+          {condition === 'New' ? (
+            <span className="badge badge-new">New</span>
+          ) : (
+            <span className="badge badge-refurbished">Refurbished</span>
+          )}
         </div>
       </div>
       

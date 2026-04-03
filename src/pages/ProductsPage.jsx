@@ -65,7 +65,7 @@ const ProductsPage = () => {
         <div className="container py-12 text-white">
           <h1 className="text-4xl font-bold mb-4 font-outfit">Medical Equipment Catalog</h1>
           <p className="text-lg opacity-90 max-w-2xl">
-            Explore our comprehensive range of premium, certified medical equipment. All devices are quality-tested and ready for immediate deployment.
+            Explore our comprehensive range of high-quality new and refurbished medical devices. Partner with us for reliable solutions.
           </p>
         </div>
       </div>
@@ -107,8 +107,9 @@ const ProductsPage = () => {
               </div>
             </div>
 
+            {/* Condition Filter */}
             <div className="filter-group mb-6">
-              <label className="form-label font-semibold mb-3 block text-sm">Availability</label>
+              <label className="form-label font-semibold mb-3 block text-sm">Condition</label>
               <div className="flex flex-col gap-2">
                 <label className="filter-radio cursor-pointer flex items-center gap-2">
                   <input 
@@ -118,7 +119,7 @@ const ProductsPage = () => {
                     checked={activeCondition === 'all'} 
                     onChange={() => handleConditionChange('all')}
                   />
-                  <span>All Equipment</span>
+                  <span>All Conditions</span>
                 </label>
                 <label className="filter-radio cursor-pointer flex items-center gap-2">
                   <input 
@@ -128,7 +129,17 @@ const ProductsPage = () => {
                     checked={activeCondition === 'New'} 
                     onChange={() => handleConditionChange('New')}
                   />
-                  <span>Certified Equipment</span>
+                  <span>New Equipment</span>
+                </label>
+                <label className="filter-radio cursor-pointer flex items-center gap-2">
+                  <input 
+                    type="radio" 
+                    name="condition" 
+                    value="Refurbished" 
+                    checked={activeCondition === 'Refurbished'} 
+                    onChange={() => handleConditionChange('Refurbished')}
+                  />
+                  <span>Refurbished</span>
                 </label>
               </div>
             </div>
