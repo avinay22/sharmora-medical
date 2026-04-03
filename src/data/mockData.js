@@ -104,6 +104,8 @@ export const products = [
   { id: 'iv2', name: 'Maquet Servo U Ventilator', category: 'icu-ventilators' },
   { id: 'iv3', name: 'Drager Evita 2 Dura Ventilator', category: 'icu-ventilators' }
 ].map(p => {
+  // We'll normalize image paths to point to our newly extracted images!
+  // E.g., "Resmed Airsense 10 Auto Cpap Machine" -> "resmed-airsense-10-auto-cpap-machine.jpg"
   const imageFileName = p.name
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
@@ -112,7 +114,7 @@ export const products = [
   return {
     ...p,
     description: `High-quality ${p.name} for professional medical use.`,
-    condition: 'New',
+    condition: p.category === 'new-items' ? 'New' : 'Refurbished',
     image: `/products/${imageFileName}` 
   };
 });
